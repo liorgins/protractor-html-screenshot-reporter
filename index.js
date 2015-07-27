@@ -209,7 +209,7 @@ function reportSpecResults(spec) {
 	};
 
 	if (takeScreenshot) {
-
+		browser.waitForAngular();
 		browser.takeScreenshot().then(function (png) {
 			finishReport(png);
 		});
